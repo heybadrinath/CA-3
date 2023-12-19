@@ -1,0 +1,160 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FAEED1;
+}
+#navBar{
+    background-color: #9F91CC;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 40px;
+}
+
+#heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+}
+
+#search{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #FF6969;
+}
+
+#searchBar{
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#bio{
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1.5px;
+}
+
+#random{
+    height: 18.75rem;
+    width: 21.875rem;
+    background-color:saddlebrown ;
+    margin: 10px auto;
+}
+
+
+#ingre{
+    margin: 0% 10%;
+    width: 80%;
+    min-height: 40%;
+    max-height: fit-content;
+    position: absolute;
+    background-color: #ff7b89;
+    z-index: 1;
+    visibility: hidden;
+    padding: 1% 5%;
+    color: rgb(0, 0, 0);
+}
+
+.text{
+    text-align: center;
+    font-size: larger;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#randomImage{
+    height: 70%;
+    width: 80%;
+    margin: 3% 10% ;
+}
+#closeButton {
+    cursor: pointer;
+}
+
+#close {
+    height: 20px;
+    width: 20px;
+    float: right;
+    transition: transform 0.5s ease-in-out;
+}
+
+#close:hover {
+    transform: scale(2) rotate(360deg);
+}
+
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+
+}
+
+#ingredientsList{
+    padding: 5px 0px 10px 10px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 600px) {
+    #navBar {
+        height: auto;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    #searchBar {
+        width: 80%;
+    }
+
+    #random {
+        width: 100%;
+        margin: 0%;
+        padding-top: 10px;
+    }
+
+    #ingre {
+        margin: 5% 5%;
+        width: 90%;
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+}
