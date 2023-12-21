@@ -95,6 +95,23 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+.p2 {
+    color: rgb(255, 255, 255);
+    animation: text-animation 1s ease-in forwards alternate infinite;
+}
+@keyframes text-animation {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(100% 100%, 0% 0%, 0% 0%, 0% 0%);
+    }
+}
 #randomImage{
     height: 70%;
     width: 80%;
@@ -169,12 +186,12 @@ body{
     }
     50% {
       opacity: 1;
-      transform: rotateX(1800deg);
+      transform: rotateX(360deg);
       text-shadow: 0 15px 2px rgb(8, 0, 255); 
     }
     100% {
       opacity: 1;
-      transform: rotateX(1800deg);
+      transform: rotateX(360deg);
       text-shadow: 0 0px 2px rgb(255, 0, 0);
     }
   }
@@ -191,7 +208,6 @@ body{
     border-radius: 10px;
     height: 20rem;
 }
-
 
 @media screen and (max-width: 600px) {
     #navBar {

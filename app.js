@@ -82,6 +82,7 @@ searchBar.addEventListener('input', searchDish);
 
 // Function to search for dishes based on user input
 async function searchDish() {
+
     const searchTerm = searchBar.value.trim();
 
     if (searchTerm === '') {
@@ -117,4 +118,5 @@ function displaySearchResults(meals) {
         `;
         searchContent.appendChild(mealDiv);
     });
+    searchContent.scrollIntoView({ behavior: 'smooth' });
 }
